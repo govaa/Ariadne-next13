@@ -54,7 +54,9 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["GothamLight","GothamBold","GothamBoldItalic", "GothamBlack", "GothamBook", "GothamBookItalic", "GothamLightItalic", "GothamMedium", "GothamMediumItalic", ...fontFamily.sans],
+        gothambook: ['var(--font-gothambook)', ...fontFamily.sans],
+        gothamlight: ['var(--font-gothamlight)', ...fontFamily.sans],
+        gothambold: ['var(--font-gothambold)', ...fontFamily.sans],
       },
       keyframes: {
         "accordion-down": {

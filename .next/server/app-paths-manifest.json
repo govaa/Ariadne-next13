@@ -1,4 +1,4 @@
 {
-  "/api/deployment-locations/route": "app/api/deployment-locations/route.js",
-  "/[lang]/page": "app/[lang]/page.js"
+  "/[lang]/page": "app/[lang]/page.js",
+  "/api/deployment-locations/route": "app/api/deployment-locations/route.js"
 }
