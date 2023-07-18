@@ -13,8 +13,6 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
-import Image from "next/image"
-import logo from "public/images/logo/ariadne-long-logo.png"
 
 const components: {
   title: string
@@ -63,17 +61,7 @@ const components: {
 export function MainNav() {
   return (
     <NavigationMenu>
-      <li
-        className="ml-auto"
-        style={{textAlign: "right",}}
-      >
       <NavigationMenuList>
-      <Image
-      src={logo}
-      width={100}
-      height={100}
-      alt="Ariadne Logo Long"
-      />
         <NavigationMenuItem className="flex-end">
           <NavigationMenuTrigger>Technology</NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -145,7 +133,6 @@ export function MainNav() {
           </Link>
         </NavigationMenuItem>
       </NavigationMenuList>
-      </li>
     </NavigationMenu>
   )
 }
