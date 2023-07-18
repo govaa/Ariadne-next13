@@ -58,7 +58,7 @@ const components: {
   },
 ]
 
-export function MainNav() {
+export default function MainNav() {
   return (
     <NavigationMenu>
       <NavigationMenuList>

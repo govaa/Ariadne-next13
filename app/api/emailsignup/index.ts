@@ -1,5 +1,4 @@
-import script from "next/script";
-import https
+const https = require('https');
 
 function EmailSignUp(req: { body: { email: any; firstname: any; lastname: any; }; cookies: { hubspotutk: any; }; headers: { [x: string]: any; }; connection: { remoteAddress: any; }; }) {
   // build the data object
