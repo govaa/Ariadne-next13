@@ -1,8 +1,6 @@
-import Link from "next/link"
-
 import { siteConfig } from "@/config/site"
 import { buttonVariants } from "@/components/ui/button"
-import { MainNav } from "@/components/main-nav"
+import MainNav from "@/components/main-nav"
 import { ThemeToggle } from "@/components/theme-toggle"
 import logo from "public/images/logo/ariadne-long-logo.png"
 import { LocaleSelector } from "./locale-selector"

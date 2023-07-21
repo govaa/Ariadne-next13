@@ -45,3 +45,6 @@ function EmailSignUp(req: { body: { email: any; firstname: any; lastname: any; }
 }
 
 export default EmailSignUp;
+
+
+

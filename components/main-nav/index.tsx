@@ -1,5 +1,4 @@
 "use client"
-
 import * as React from "react"
 import Link from "next/link"
 
@@ -136,7 +135,7 @@ export default function MainNav() {
     </NavigationMenu>
   )
 }
-<button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Get Started</button>
+
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
   React.ComponentPropsWithoutRef<"a">

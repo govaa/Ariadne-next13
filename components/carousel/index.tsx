@@ -22,11 +22,11 @@ interface CarouselProps {
   return (
     <div className="overflow-hidden relative">
       <div className="flex transition-transform ease-out duration-500" style={{ transform: `translateX(-${curr * 100}%)` }}>{slides}</div>
-      <div className="absolute inset-0 flex item-center justify-between p-4">
-        <button onClick={prev}>
+      <div className="absolute inset-0 flex item-center justify-between p-2">
+        <button onClick={prev} className="p-1 rounded-full shadow bg-white-80 text-grey-800 ">
           <ChevronLeft size={40} />
         </button>
-        <button onClick={next}>
+        <button onClick={next} className="p-1 rounded-full shadow bg-white-80 text-grey-800">
           <ChevronRight size={40} />
         </button>
       </div>

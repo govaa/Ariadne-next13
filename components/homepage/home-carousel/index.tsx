@@ -9,13 +9,11 @@ export default function HomeCarousel() {
 
 return (
     <main className="App">
-        <div>
+        <div className="md:container-fit-screen  md:mx-auto">
             <Carousel> 
-            {slides.map((s, index) => (
-                    <div key={index}>
-                      <Image src={s} alt="Homepage image" width={1000} height={800} />
-                    </div>
-                ))}
+            {[...slides.map((s) => (
+                      <img src = {s} />
+                ))]}
             </Carousel>
         </div> 
     </main>
