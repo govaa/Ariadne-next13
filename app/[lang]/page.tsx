@@ -6,10 +6,6 @@ import homeimage1 from "public/images/homepage-image-1.png"
 import { siteConfig } from "@/config/site"
 import { buttonVariants } from "@/components/ui/button"
 
-const DeploymentsMap = dynamic(
-  () => import("@/components/homepage/deployments-map"),
-  { ssr: false, loading: () => <div>Loading</div> })
-
 const HomeCarousel = dynamic(
     () => import("@/components/homepage/home-carousel"),
     { ssr: true, loading: () => <div>Loading</div> })
