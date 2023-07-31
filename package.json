@@ -27,6 +27,7 @@
     "@tanstack/react-query": "^4.29.15",
     "@tanstack/react-query-devtools": "^4.29.15",
     "@turf/helpers": "^6.5.0",
+    "accept-language-negotiator": "^1.2.1",
     "axios": "^1.4.0",
     "class-variance-authority": "^0.4.0",
     "clsx": "^1.2.1",
