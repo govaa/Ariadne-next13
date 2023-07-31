@@ -125,9 +125,9 @@ export default function MainNav() {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/blog" legacyBehavior passHref>
+          <Link href="/contact" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              About Us
+              Contact
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>

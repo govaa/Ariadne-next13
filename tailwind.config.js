@@ -77,5 +77,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate", "tw-elements/dist/plugin")],  
+  plugins: [require("tailwindcss-animate", "tw-elements/dist/plugin","@tailwindcss/forms")],  
 }

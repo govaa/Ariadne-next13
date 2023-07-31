@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@elastic/elasticsearch": "7.17",
+    "@emailjs/browser": "^3.11.0",
     "@formatjs/intl-localematcher": "^0.4.0",
     "@hubspot/cli": "^4.2.0",
     "@mapbox/tilebelt": "^1.0.2",
@@ -30,6 +31,7 @@
     "class-variance-authority": "^0.4.0",
     "clsx": "^1.2.1",
     "deck.gl": "^8.9.19",
+    "email-validator": "^2.0.4",
     "flag-icons": "^6.7.0",
     "lucide-react": "0.105.0-alpha.4",
     "mapbox-gl": "^2.15.0",

@@ -4,7 +4,7 @@ const PageBanner = ({pageTitle="", pageSubtitle=""}) => {
             <div className="d-table">
                 <div className="d-table-cell">
                     <div className="container">
-                        <h1 className="text-3xl font-bold mb-4">
+                        <h1 className="text-3xl font-bold text-white text-center pt-1 mb-4">
                             {pageTitle}
                         </h1>
                         <h4 className="pt-3 text-gray-600">
