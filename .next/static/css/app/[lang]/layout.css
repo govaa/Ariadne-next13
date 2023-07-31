@@ -849,6 +849,10 @@ video {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+.my-24 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
 .-mt-3 {
   margin-top: -0.75rem;
 }
@@ -938,6 +942,15 @@ video {
 }
 .mr-\[6px\] {
   margin-right: 6px;
+}
+.mb-12 {
+  margin-bottom: 3rem;
+}
+.mb-32 {
+  margin-bottom: 8rem;
+}
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 .box-border {
   box-sizing: border-box;
@@ -2133,6 +2146,12 @@ video {
 }
 .pt-\[6px\] {
   padding-top: 6px;
+}
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+.pl-\[0\.15rem\] {
+  padding-left: 0.15rem;
 }
 .text-left {
   text-align: left;
@@ -4122,6 +4141,16 @@ video {
   color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
+:is(.dark .dark\:placeholder\:text-neutral-200)::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(229 229 229 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:placeholder\:text-neutral-200)::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(229 229 229 / var(--tw-text-opacity));
+}
+
 :is(.dark .dark\:checked\:border-primary:checked) {
   border-color: hsl(var(--primary));
 }
@@ -4366,6 +4395,10 @@ video {
     display: block;
   }
 
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -4386,6 +4419,14 @@ video {
     width: auto;
   }
 
+  .md\:w-6\/12 {
+    width: 50%;
+  }
+
+  .md\:max-w-xl {
+    max-width: 36rem;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -4401,6 +4442,16 @@ video {
   .md\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+  }
+
+  .md\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .md\:pr-1 {
@@ -4423,6 +4474,10 @@ video {
 
 @media (min-width: 1024px) {
 
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -4437,6 +4492,18 @@ video {
 
   .lg\:w-\[600px\] {
     width: 600px;
+  }
+
+  .lg\:w-5\/12 {
+    width: 41.666667%;
+  }
+
+  .lg\:w-7\/12 {
+    width: 58.333333%;
+  }
+
+  .lg\:max-w-3xl {
+    max-width: 48rem;
   }
 
   .lg\:grid-cols-4 {

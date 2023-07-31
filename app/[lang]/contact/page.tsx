@@ -8,7 +8,7 @@ import Head from "next/head";
 
 const Contact = () => {
     return (
-        <>
+        <div>
 
             <Head>
                 <title>Contact Us</title>
@@ -22,7 +22,7 @@ const Contact = () => {
             <GoogleMap />
            
             <Footer />
-        </>
+        </div>
     )
 }
 
