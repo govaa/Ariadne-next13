@@ -58,8 +58,6 @@ const ContactForm = () => {
   };
 
 return (
-  <div className="container my-24 mx-auto md:px-6">
-    <section className="mb-32 text-center bg-white dark:bg-gray-900">
       <div className="mx-auto max-w-screen-md sm:text-center">
           <h2 className="mb-12 text-3xl font-bold">Get In Touch With Us</h2>
           <h5 className="mb-12 text-xl">Anything On your Mind. We'll Be Glad To Assist You!</h5>
@@ -151,12 +149,10 @@ return (
               </div>
             )}
 
-            <button type="submit" className="py-3 px-5 w-full text-sm font-medium-gothamlight text-center text-white rounded-full border cursor-pointer bg-ariadneblue border-primary-600 sm:rounded-full hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800" 
-              disabled={loading}>Send Message</button>
+            <button type="submit" className="py-3 px-5 w-full text-2xl font-gothamlight text-center text-white rounded-full border cursor-pointer bg-ariadneblue border-primary-600 sm:rounded-full hover:bg-primary-800 focus:ring-2 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800" 
+              disabled={loading}>Submit</button>
           </form>
         </div>
-    </section>
-  </div>
 );
 };
 

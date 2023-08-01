@@ -71,47 +71,47 @@ const Footer = () => {
           </div>
       <div className="">
         <h6
-          className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+          className="mb-4 flex justify-center font-semibold uppercase md:justify-start text-white ">
           Products
         </h6>
         <p className="mb-4">
-          <Link href="#!" className="text-neutral-600 dark:text-neutral-200">Angular</Link>
+          <Link href="#!" className="text-white dark:text-neutral-200">Angular</Link>
         </p>
         <p className="mb-4">
-          <Link href="#!" className="text-neutral-600 dark:text-neutral-200">React</Link>
+          <Link href="#!" className="text-white  dark:text-neutral-200">React</Link>
         </p>
         <p className="mb-4">
-          <Link href="#!" className="text-neutral-600 dark:text-neutral-200">Vue</Link>
+          <Link href="#!" className="text-white dark:text-neutral-200">Vue</Link>
         </p>
         <p>
-          <Link href="#!" className="text-neutral-600 dark:text-neutral-200">Laravel</Link>
+          <Link href="#!" className="text-white dark:text-neutral-200">Laravel</Link>
         </p>
       </div>
 
       <div className="">
-        <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+        <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start text-white ">
           Useful links
         </h6>
         <p className="mb-4">
-          <Link href="#!" className="text-neutral-600 dark:text-neutral-200"
+          <Link href="#!" className="text-white dark:text-neutral-200"
             >Pricing</Link>
         </p>
         <p className="mb-4">
-          <Link href="#!" className="text-neutral-600 dark:text-neutral-200">Settings</Link>
+          <Link href="#!" className="text-white dark:text-neutral-200">Settings</Link>
         </p>
         <p className="mb-4">
-          <Link href="#!" className="text-neutral-600 dark:text-neutral-200">Orders</Link>
+          <Link href="#!" className="text-white dark:text-neutral-200">Orders</Link>
         </p>
         <p>
-          <Link href="#!" className="text-neutral-600 dark:text-neutral-200">Help</Link>
+          <Link href="#!" className="text-white dark:text-neutral-200">Help</Link>
         </p>
       </div>
 
       <div>
-        <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+        <h6 className="mb-4 flex justify-center font-semibold uppercase md:justify-start text-white ">
           Contact
         </h6>
-        <p className="mb-4 flex items-center justify-center md:justify-start">
+        <p className="mb-4 flex items-center justify-center md:justify-start text-white ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -124,7 +124,7 @@ const Footer = () => {
           </svg>
           New York, NY 10012, US
         </p>
-        <p className="mb-4 flex items-center justify-center md:justify-start">
+        <p className="mb-4 flex items-center justify-center md:justify-start text-white ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -137,7 +137,7 @@ const Footer = () => {
           </svg>
           info@example.com
         </p>
-        <p className="mb-4 flex items-center justify-center md:justify-start">
+        <p className="mb-4 flex items-center justify-center md:justify-start text-white ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -150,7 +150,7 @@ const Footer = () => {
           </svg>
           + 01 234 567 88
         </p>
-        <p className="flex items-center justify-center md:justify-start">
+        <p className="flex items-center justify-center md:justify-start text-white ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -167,12 +167,12 @@ const Footer = () => {
     </div>
   </div>
 
-  <div className="bg-neutral-200 p-6 text-center dark:bg-neutral-700">
-    <span>© 2023 Copyright:</span>
+  <div className="bg-ariadneblue p-6 text-center dark:bg-neutral-700">
+    <span className="text-white">© 2023 Copyright: </span>
     <Link
-      className="font-semibold text-neutral-600 dark:text-neutral-400"
-      href="https://tailwind-elements.com/"
-      >Tailwind Elements
+      className="font-semibold text-white dark:text-neutral-400"
+      href="https://www.ariadne.inc/"> 
+      Ariadne Maps GmbH
     </Link>
   </div>
   </div>

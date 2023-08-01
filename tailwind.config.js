@@ -21,7 +21,7 @@ module.exports = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         ariadnepurple: "#652380",
-        ariadneblue: "#0097d1",
+        ariadneblue: "#0693d2",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
