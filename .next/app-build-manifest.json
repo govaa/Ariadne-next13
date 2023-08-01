@@ -5,11 +5,6 @@
       "static/chunks/main-app.js",
       "static/chunks/app/[lang]/page.js"
     ],
-    "/[lang]/contact/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[lang]/contact/page.js"
-    ],
     "/[lang]/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -20,6 +15,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/[lang]/technology/page.js"
+    ],
+    "/[lang]/contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[lang]/contact/page.js"
     ]
   }
 }

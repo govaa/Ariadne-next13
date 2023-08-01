@@ -1,7 +1,6 @@
 import dynamic from "next/dynamic"
 import Link from "next/link"
 import Image from "next/image"
-import EmailSignUp from "@/app/api/emailsignup"
 import homeimage1 from "public/images/homepage-image-1.png"
 import { siteConfig } from "@/config/site"
 import { buttonVariants } from "@/components/ui/button"

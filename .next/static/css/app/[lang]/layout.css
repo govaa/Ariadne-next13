@@ -1710,6 +1710,9 @@ video {
 .\!border-0 {
   border-width: 0px !important;
 }
+.border-2 {
+  border-width: 2px;
+}
 .border-b {
   border-bottom-width: 1px;
 }
@@ -2229,6 +2232,10 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 .font-bold {
   font-weight: 700;
