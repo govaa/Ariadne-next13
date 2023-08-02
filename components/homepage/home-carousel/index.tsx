@@ -3,15 +3,15 @@ import Carousel from "@/components/carousel"
 
 const slides =[
     {
-        imgSrc: '/images/homepage-image-1.png',
+        imgSrc: '/images/homepage-image-2.png',
         text: 'Know every visitor journey With Ariadne\'s Solution'
     },
     {
-        imgSrc: '/images/homepage-image-1.png',
+        imgSrc: '/images/homepage-image-2.png',
         text: 'Text for image 2'
     },
     {
-        imgSrc: '/images/homepage-image-1.png',
+        imgSrc: '/images/homepage-image-2.png',
         text: 'Text for image 3'
     },
 ]
