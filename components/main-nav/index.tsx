@@ -1,8 +1,8 @@
 "use client"
-import * as React from "react"
-import Link from "next/link"
+import * as React from "react";
+import Link from "next/link";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -11,15 +11,9 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
+} from "@/components/ui/navigation-menu";
 
-const components: {
-  title: string
-  href: string
-  description: string
-  disabled?: boolean
-  external?: boolean
-}[] = [
+const components = [
   {
     title: "Alert Dialog",
     href: "/docs/primitives/alert-dialog",
@@ -55,7 +49,7 @@ const components: {
     description:
       "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
   },
-]
+];
 
 export default function MainNav() {
   return (
@@ -64,14 +58,13 @@ export default function MainNav() {
         <NavigationMenuItem className="flex-end">
           <NavigationMenuTrigger>Technology</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+            <ul className="grid gap-2 p-3 sm:p-4 md:p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
                   <a
                     className="flex-end h-full w-full select-none flex-col justify-end rounded-full bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
-                    {/* <Icons.logo className="h-6 w-6" /> */}
                     <div className="mb-2 mt-4 text-lg font-medium">
                       shadcn/ui
                     </div>
@@ -97,7 +90,7 @@ export default function MainNav() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Use Cases</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+            <ul className="grid w-full sm:w-[300px] md:w-[400px] lg:w-[500px] xl:w-[600px] gap-2 sm:gap-3 p-3 sm:p-4 md:p-6 md:grid-cols-1 lg:grid-cols-2">
               {components.map((component) => (
                 <ListItem
                   key={component.title}
@@ -133,7 +126,7 @@ export default function MainNav() {
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
-  )
+  );
 }
 
 const ListItem = React.forwardRef<
@@ -158,6 +151,6 @@ const ListItem = React.forwardRef<
         </a>
       </NavigationMenuLink>
     </li>
-  )
-})
-ListItem.displayName = "ListItem"
+  );
+});
+ListItem.displayName = "ListItem";
