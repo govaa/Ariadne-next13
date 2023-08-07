@@ -15,10 +15,10 @@ import {
 
 const components = [
   {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
+    title: "Retail",
+    href: "/industry/retail",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+      "XX",
   },
   {
     title: "Hover Card",
@@ -88,7 +88,7 @@ export default function MainNav() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Use Cases</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Industry</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-full sm:w-[300px] md:w-[400px] lg:w-[500px] xl:w-[600px] gap-2 sm:gap-3 p-3 sm:p-4 md:p-6 md:grid-cols-1 lg:grid-cols-2">
               {components.map((component) => (
@@ -97,7 +97,7 @@ export default function MainNav() {
                   title={component.title}
                   href={component.href}
                 >
-                  {component.description}
+                  {/* {component.description} */}
                 </ListItem>
               ))}
             </ul>
