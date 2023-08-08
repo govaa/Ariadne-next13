@@ -38,7 +38,7 @@
     "app/api/emailnewsletter/index.js",
     "app/[lang]/blog/page.jsx",
     "build/types/**/*.ts"
-  ],
+, "components/site-header/locale-selector/page.jsx", "components/site-header/locale-selector/page.jsx", "components/site-header/locale-selector/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]

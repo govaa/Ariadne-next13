@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic"
+import { getDictionary } from './dictionaries'
 import Link from "next/link"
 import Image from "next/image"
 import { siteConfig } from "@/config/site"
@@ -16,7 +17,14 @@ const Footer = dynamic(
     () => import("@/components/footer"),
     { ssr: true, loading: () => <div>Loading</div> })
 
-export default function IndexPage() {
+    type PageProps = {
+      params: {
+        lang: string;
+      };
+    };
+
+export default async function IndexPage({ params: { lang } }: PageProps) {
+  const dict = await getDictionary(lang) // en
   return (
     <main>
       <HomeCarousel />
@@ -48,7 +56,7 @@ export default function IndexPage() {
               </div>
               <div className="ml-6 grow">
                 <p className="mb-2 font-bold dark:text-white">
-                  Technical support
+                {dict.navbar.Technical_support}
                 </p>
                 <p className="text-neutral-500 dark:text-neutral-200">
                   support@example.com

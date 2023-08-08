@@ -9,7 +9,6 @@ import { SiteHeader } from "@/components/site-header"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
 
-
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }))
 }
@@ -45,7 +44,7 @@ export default function RootLayout({ children, params }: RootLayoutProps) {
             gothambook.variable
           )}>
           <ReactQueryProvider>
-            <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
               <div className="relative flex min-h-screen flex-col">
                 <SiteHeader />
                 <div className="flex-1">{children}</div>
