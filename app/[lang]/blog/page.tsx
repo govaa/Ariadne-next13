@@ -1,73 +1,14 @@
-"use client"
 import BlogCard from "@/components/blog/BlogCard";
 import PageBanner from "@/components/pagebanner";
 import Footer from "@/components/footer";
+
+import { NextSeo } from "next-seo";
 import Head from "next/head";
-import { useEffect, useState } from "react";
-import { BlogPostApi } from "@/app/api/blog-post/page";
-import { useRouter } from 'next/navigation';
-import router from "next/router";
+import { useState } from "react";
+import { BlogPostApi } from "src/packages/blog-post";
 
-
-type AuthorAttributes = {
-  firstname: string;
-  lastname: string;
-};
-
-type AuthorData = {
-  attributes: AuthorAttributes;
-};
-
-type Author = {
-  data: AuthorData;
-};
-
-type ImageFormats = {
-  small: {
-    url: string;
-  };
-};
-
-type ImageAttributes = {
-  formats: ImageFormats;
-};
-
-type ImageData = {
-  attributes: ImageAttributes;
-};
-
-type Image = {
-  data: ImageData;
-};
-
-type BlogPost = {
-  [x: string]: any;
-  title: string;
-  author: Author;
-  image: Image;
-  publishedAt: string;
-  slug: string;
-  excerpt: string;
-};
-
-
-const Blog = () => {
-
-  const [posts, setPosts] = useState<BlogPost[]>([]);
-  const [page, setPage] = useState(1);
-  const [locale, setLocale] = useState("en");
-
-  useEffect(() => {
-    const fetchPosts = async () => {
-      const { data } = await BlogPostApi.get({ page });
-      setPosts(data);
-    };
-    fetchPosts();
-  }, [page]);
-
-  const onClickChangePage = (page: string) => {
-    router.push(`/blog${page}`);
-  };
+const Blog = ({ initialPosts }) => {
+  const [posts, setPosts] = useState(initialPosts);
 
   return (
     <>
@@ -75,16 +16,20 @@ const Blog = () => {
         <title>Blog | People Counting Software | Ariadne</title>
         <meta name="description" content="Ariadne" />
       </Head>
+      <NextSeo canonical="https://www.ariadne.inc/blog" />
+
+      <Navbar />
 
       <PageBanner pageTitle="Ariadne Blog" />
       <div
-        className="blog-area py-80 bg-gray-200 quarter-circle overflow-hidden"
+        className="blog-area ptb-80 quarter-circle overflow-hidden"
+        style={{ position: "relative" }}
       >
         <div className="container semi-circle">
           <div className="row">
-            {Array.isArray(posts) ? posts.filter((post) => post.locale === locale).map((post) => (
+            {posts.data.map(({ attributes: post }) => (
               <BlogCard key={post.title} post={post} />
-            )) : <p>No posts available</p>}
+            ))}
           </div>
         </div>
       </div>
@@ -93,5 +38,10 @@ const Blog = () => {
     </>
   );
 };
+
+export async function getServerSideProps() {
+  const { data: initialPosts } = await BlogPostApi.get({});
+  return { props: { initialPosts } };
+}
 
 export default Blog;

@@ -3,7 +3,7 @@ import Footer from "@/components/footer";
 import MainNav from "@/components/main-nav";
 import Head from "next/head";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
-import { BlogPostApi } from "@/app/api/blog-post/page";
+import { BlogPostApi } from "@/app/api/blog-post";
 import { Icon, Clock, User } from "lucide-react";
 
 interface Post {

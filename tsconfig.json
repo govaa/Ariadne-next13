@@ -36,9 +36,9 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/api/emailnewsletter/index.js",
-    "app/[lang]/blog/page.jsx",
+    "app/[lang]/blog/index.tsx",
     "build/types/**/*.ts"
-, "components/site-header/locale-selector/page.jsx", "components/site-header/locale-selector/page.jsx", "components/site-header/locale-selector/page.jsx"  ],
+, "components/site-header/locale-selector/page.jsx", "components/site-header/locale-selector/page.jsx", "components/site-header/locale-selector/page.jsx", "app/[lang]/blog/page.tsx", "components/pagination/index.tsx"  ],
   "exclude": [
     "node_modules"
   ]
