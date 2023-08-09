@@ -800,6 +800,9 @@ video {
 .m-0 {
   margin: 0px;
 }
+.m-1 {
+  margin: 0.25rem;
+}
 .\!my-0 {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
@@ -828,6 +831,10 @@ video {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
 .my-24 {
   margin-top: 6rem;
   margin-bottom: 6rem;
@@ -843,6 +850,9 @@ video {
 .my-\[5px\] {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+.-mb-12 {
+  margin-bottom: -3rem;
 }
 .-ml-\[1\.5rem\] {
   margin-left: -1.5rem;
@@ -1129,6 +1139,12 @@ video {
 .h-screen {
   height: 100vh;
 }
+.h-1\/4 {
+  height: 25%;
+}
+.h-\[200px\] {
+  height: 200px;
+}
 .max-h-\[calc\(100\%-64px\)\] {
   max-height: calc(100% - 64px);
 }
@@ -1270,6 +1286,9 @@ video {
 }
 .w-screen {
   width: 100vw;
+}
+.w-12 {
+  width: 3rem;
 }
 .min-w-0 {
   min-width: 0px;
@@ -1939,6 +1958,10 @@ video {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
 .\!p-0 {
   padding: 0px !important;
 }
@@ -2102,6 +2125,9 @@ video {
 .pb-0 {
   padding-bottom: 0px;
 }
+.pb-12 {
+  padding-bottom: 3rem;
+}
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -2199,6 +2225,10 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 .text-\[0\.8rem\] {
   font-size: 0.8rem;
@@ -2931,6 +2961,11 @@ video {
 
 .hover\:bg-accent:hover {
   background-color: hsl(var(--accent));
+}
+
+.hover\:bg-ariadnepurple:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(101 35 128 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-destructive\/90:hover {
@@ -4406,6 +4441,10 @@ video {
     display: none;
   }
 
+  .md\:w-4\/12 {
+    width: 33.333333%;
+  }
+
   .md\:w-6\/12 {
     width: 50%;
   }
@@ -4460,6 +4499,10 @@ video {
     padding-right: 1.5rem;
   }
 
+  .md\:pb-6 {
+    padding-bottom: 1.5rem;
+  }
+
   .md\:pr-1 {
     padding-right: 0.25rem;
   }
@@ -4483,8 +4526,8 @@ video {
     display: none;
   }
 
-  .lg\:w-7\/12 {
-    width: 58.333333%;
+  .lg\:w-9\/12 {
+    width: 75%;
   }
 
   .lg\:w-\[500px\] {

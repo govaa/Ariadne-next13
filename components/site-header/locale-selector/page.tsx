@@ -34,7 +34,7 @@ export default function LocaleSelector() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button className="uppercase">
+        <Button className="uppercase bg-white text-black-gothamlight hover:bg-ariadnepurple hover:text-natural-500">
           {currentLocale()}
         </Button>
       </DropdownMenuTrigger>
