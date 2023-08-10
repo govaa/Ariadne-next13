@@ -60,14 +60,12 @@ const Blog = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       const { data } = await BlogPostApi.get({ page });
-      setPosts(data);
+      console.log('data ... ', data)
+      setPosts(data.data);
     };
     fetchPosts();
   }, [page]);
 
-  const onClickChangePage = (page: string) => {
-    router.push(`/blog${page}`);
-  };
 
   return (
     <>
@@ -76,13 +74,13 @@ const Blog = () => {
         <meta name="description" content="Ariadne" />
       </Head>
 
-      <PageBanner pageTitle="Ariadne Blog" />
+      <PageBanner pageTitle="Ariadne Blog" /> 
       <div
-        className="blog-area py-80 bg-gray-200 quarter-circle overflow-hidden"
+        className="blog-area py-80 bg-gray-200 quarter-circle overflow-hidden" style={{ position: "relative" }}
       >
         <div className="container semi-circle">
           <div className="row">
-            {Array.isArray(posts) ? posts.filter((post) => post.locale === locale).map((post) => (
+            {Array.isArray(posts) ? posts.map((post) => (
               <BlogCard key={post.title} post={post} />
             )) : <p>No posts available</p>}
           </div>

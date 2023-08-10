@@ -55,9 +55,7 @@ const BlogCard = ({ post }: { post: BlogPost }) => {
       <div className="single-blog-post h-100">
         <div className="blog-image">
           <Link href={"/blog/" + slug}>
-            <a>
               <img src={imageUrl} alt={title} />
-            </a>
           </Link>
 
           <div className="date">
@@ -73,7 +71,7 @@ const BlogCard = ({ post }: { post: BlogPost }) => {
         <div className="blog-post-content">
           <h3>
             <Link href={"/blog/" + slug}>
-              <a>{title}</a>
+              {title}
             </Link>
           </h3>
 
@@ -82,7 +80,7 @@ const BlogCard = ({ post }: { post: BlogPost }) => {
             {author?.data?.attributes?.lastname}
           </span>
 
-          <p>{excerpt.slice(0, 250) + "..."}</p>
+          <p>{(excerpt || "").slice(0, 250) + "..."}</p>
 
           <Link href={"/blog/" + slug} className="read-more-btn">
               Read More <ChevronRight />
