@@ -43,8 +43,8 @@ type BlogPost = {
 };
 
 const BlogCard = ({ post }: { post: BlogPost }) => {
-  const { title, author, image, publishedAt, slug, excerpt } = post;
-  
+  const { title, author, image, publishedAt, slug, excerpt } = post.attributes;
+  console.log(post)
   // Use optional chaining to avoid errors when image data isn't present
   const imageUrl = image && image.data && image.data.attributes && image.data.attributes.formats && image.data.attributes.formats.small && image.data.attributes.formats.small.url 
     ? `${process.env.cmsBaseUrl}${image.data.attributes.formats.small.url}`
