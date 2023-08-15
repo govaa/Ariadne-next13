@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import * as Icon from 'react-feather';
+import * as Icon from 'lucide-react';
 
 export default function BlogCard({title, author, coverPhoto, datePublished, slug, excerpt}){
     return(

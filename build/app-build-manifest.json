@@ -6,21 +6,20 @@
       "static/css/app/[lang]/layout.css",
       "static/chunks/app/[lang]/layout.js"
     ],
-    "/[lang]/blog/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[lang]/blog/page.js"
-    ],
     "/[lang]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/[lang]/page.js"
     ],
-    "/[lang]/contact/page": [
+    "/[lang]/blog/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/[lang]/contact/page.css",
-      "static/chunks/app/[lang]/contact/page.js"
+      "static/chunks/app/[lang]/blog/page.js"
+    ],
+    "/[lang]/blog/[slug]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[lang]/blog/[slug]/page.js"
     ]
   }
 }
