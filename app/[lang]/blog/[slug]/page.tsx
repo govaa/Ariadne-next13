@@ -1,7 +1,7 @@
 import qs from "qs";
 import { CMSDataAttributes } from "../page.jsx";
-import { use } from "react";
-import { ReactMarkdown } from "react-markdown/lib/react-markdown";
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm';
 
 type Props = {
   post: CMSDataAttributes;
@@ -44,17 +44,17 @@ export default async function PostPage({ params}: CMSResponse) {
 const post= await getSinglePost(params.slug, params.postID);
 console.log("post",post);
   return (
-    <div className="p-4">
+    <div className="container px-4 lg:px-0">
       <h1 className="text-3xl font-bold mb-4">{post.title}</h1>
-      <ReactMarkdown
-                    transformImageUri={(url: string) =>
-                      url.startsWith("http") ? url : `${process.env.cmsBaseUrl}${url}`
-                    }>
-                    {post.content}
-      </ReactMarkdown>
-
-      <img src={`${process.env.cmsBaseUrl}${post.image?.data?.attributes?.formats?.small?.url}`} alt={post.title} className="w-full h-52 object-cover mb-4" />
-      <p>{post.content}</p>
+      <div className="prose prose-lg mx-auto">
+        <ReactMarkdown
+                      transformImageUri={(url: string) =>
+                        url.startsWith("http") ? url : `${process.env.cmsBaseUrl}${url}`
+                      }               
+                      >
+                      {post.content}
+        </ReactMarkdown>
+      </div>
     </div>
   );
 };

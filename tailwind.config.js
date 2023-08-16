@@ -14,6 +14,23 @@ module.exports = {
       },
     },
     extend: {
+      typography: {
+          DEFAULT: {
+                css: {
+                      strong: {
+                          fontWeight: 'bold',
+                              },
+                em: {
+                    fontStyle: 'italic',
+                    },
+                h1: {
+                    fontSize: '2em',
+                    fontWeight: 'bold',
+                    },
+                // ... add styles for other Markdown elements like h2, h3, a, blockquote, etc.
+                    },
+              },
+            },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -77,5 +94,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate", "tw-elements/dist/plugin","@tailwindcss/forms")],  
+  plugins: [require("tailwindcss-animate", "tw-elements/dist/plugin","@tailwindcss/forms","@tailwindcss/typography",)],  
 }

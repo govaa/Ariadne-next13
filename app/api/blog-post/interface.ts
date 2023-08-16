@@ -24,6 +24,7 @@ export interface Bloginterface {
         };
         };
         excerpt: string;
+        content: string;
     meta: {
         pagination: {
           pageCount: number;
