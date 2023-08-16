@@ -62,8 +62,6 @@ const get = async ({ page = 1, pageSize = 20, sort = "id:desc" }) => {
 
 export default async function BlogIndex() {
     const posts: CMSDataAttributes[] = await get({}); // You can pass other parameters as required
-    console.log(posts);
-
     return (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-4">
             {posts.map(post => (
