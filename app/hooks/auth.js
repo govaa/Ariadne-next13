@@ -1,4 +1,4 @@
-import { getCluster } from "@/db/elasticHelpers";
+import { getCluster } from "app/db/elasticHelpers.ts";
 
 async function findUser(credential) {
   if (!credential) {
