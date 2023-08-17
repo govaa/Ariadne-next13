@@ -6,6 +6,7 @@ import { siteConfig } from "@/config/site"
 import { gothambook } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
 import { SiteHeader } from "@/components/site-header"
+import MainNav from "@/components/main-nav"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
 
@@ -46,7 +47,7 @@ export default function RootLayout({ children, params }: RootLayoutProps) {
           <ReactQueryProvider>
             <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
               <div className="relative flex min-h-screen flex-col">
-                <SiteHeader />
+                <MainNav />
                 <div className="flex-1">{children}</div>
               </div>
               <TailwindIndicator />

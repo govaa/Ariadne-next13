@@ -1,4 +1,5 @@
 import BlogCard from "@/components/blog/BlogCard";
+import Link from "next/link";
 import { ReactNode } from "react";
 
 export type ImageAttributes = {
@@ -63,18 +64,22 @@ const get = async ({ page = 1, pageSize = 20, sort = "id:desc" }) => {
 export default async function BlogIndex() {
     const posts: CMSDataAttributes[] = await get({}); // You can pass other parameters as required
     return (
+    <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-4">
             {posts.map(post => (
                 <div key={post.slug} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                    <img src={`${process.env.cmsBaseUrl}${post.image.data?.attributes?.formats?.small?.url}`} alt={post.title} className="w-full h-52 object-cover rounded-lg" />
+                  <Link href={`/blog/${post.slug}`} className="text-grey-600 hover:text-grey-800 transition-colors duration-200">
+                    <img src={`${process.env.cmsBaseUrl}${post.image.data?.attributes?.formats?.small?.url}`} alt={post.title} className="w-full h-60 object-cover rounded-lg" />
                     <div className="p-5">
                         <h2 className="text-2xl font-semibold mb-3 truncate">{post.title}</h2>
                         <p className="text-gray-500 mb-4 line-clamp-2">{post.excerpt}</p>
-                        <a href={`/blog/${post.slug}`} className="text-blue-600 hover:text-blue-800 transition-colors duration-200">Read More</a>
+                        <span className="text-blue-600 hover:text-blue-800 transition-colors duration-200">Read More</span>
                     </div>
+                  </Link>
                 </div>
             ))}
         </div>
+    </div>
     );
 
 }

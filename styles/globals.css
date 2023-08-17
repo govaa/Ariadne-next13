@@ -107,25 +107,9 @@
     @apply text-base leading-relaxed mb-4;
   }
 
-  a {
-    @apply text-blue-500 hover:underline;
-  }
 
   blockquote {
     @apply border-l-4 pl-4 italic border-gray-300;
-  }
-
-  ol,
-  ul {
-    @apply list-decimal list-inside mb-4;
-  }
-
-  ol {
-    @apply list-decimal;
-  }
-
-  ul {
-    @apply list-disc;
   }
 
   code {
@@ -147,5 +131,8 @@
   th {
     @apply bg-gray-300;
   }
+  .dropdown-container:hover #dropdownNavbar {
+    display: block; /* or any other property you use to show the dropdown */
+}
 }
 

@@ -59,14 +59,13 @@ export default function LogoCarousel() {
     <div className="relative w-full overflow-x-hidden">
       <div className="grid grid-flow-col gap-4 p-4 transition-all duration-500 ease-in-out items-center justify-items-center">
         {currentSlides.map((slide, index) => (
-          <div key={index} className="flex justify-center items-center h-100">
-            <Image
-              src={slide}
-              alt="Partner Logos"
-              width={200}
-              height={100}
-              layout="intrinsic"
-            />
+          <div key={index} className="flex justify-center items-center h-100 w-44"> {/* Added width to the container */}
+            <div className="w-40 h-20 flex items-center justify-center overflow-hidden rounded"> {/* New container for the image */}
+              <img
+                src={slide}
+                alt="Partner Logos"
+              />
+            </div>
           </div>
         ))}
       </div>

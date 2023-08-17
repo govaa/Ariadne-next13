@@ -1,0 +1,1 @@
+{"c":["app/[lang]/layout","webpack"],"r":["_app-pages-browser_dictionaries_en_json","_app-pages-browser_dictionaries_de_json"],"m":["(app-pages-browser)/./components/site-header/locale-selector/current-locale.tsx","(app-pages-browser)/./lib/get-dictionary.ts","(app-pages-browser)/./dictionaries/en.json","(app-pages-browser)/./dictionaries/de.json"]}

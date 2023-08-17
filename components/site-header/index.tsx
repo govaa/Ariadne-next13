@@ -1,7 +1,5 @@
 import { siteConfig } from "@/config/site"
-import { buttonVariants } from "@/components/ui/button"
 import MainNav from "@/components/main-nav"
-import { ThemeToggle } from "@/components/theme-toggle"
 import LocaleSelector from "./locale-selector/page"
 import Image from "next/image"
 import Link from "next/link"
@@ -14,7 +12,7 @@ export function SiteHeader() {
             <Image src="/images/logo/ariadne-long-logo.png"  width={140} height={100} alt="Ariadne Logo Long" layout="responsive" />
         </Link>
         <nav className="flex items-center space-x-4">
-          <MainNav/>
+          <MainNav />
           <LocaleSelector />
           <Link href="/get-started" className="inline-block bg-ariadnepurple hover:bg-opacity-90 text-white font-bold py-2 px-4 rounded-full">
                 Get Started

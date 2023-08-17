@@ -1,156 +1,89 @@
 "use client"
 import * as React from "react";
 import Link from "next/link";
-
-import { cn } from "@/lib/utils";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
-
-const components = [
-  {
-    title: "Retail",
-    href: "/industry/retail",
-    description:
-      "XX",
-  },
-  {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
-  },
-  {
-    title: "Progress",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
-  {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
-  },
-  {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  },
-  {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-  },
-];
+import LocaleSelector from "../site-header/locale-selector/page";
+import { ChevronDown } from "lucide-react";
+import CurrentLocale from "../site-header/locale-selector/current-locale";
 
 export default function MainNav() {
-  return (
-    <NavigationMenu>
-      <NavigationMenuList>
-        <NavigationMenuItem className="flex-end">
-          <NavigationMenuTrigger>Technology</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid gap-2 p-3 sm:p-4 md:p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <li className="row-span-3">
-                <NavigationMenuLink asChild>
-                  <a
-                    className="flex-end h-full w-full select-none flex-col justify-end rounded-full bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
-                  >
-                    <div className="mb-2 mt-4 text-lg font-medium">
-                      shadcn/ui
-                    </div>
-                    <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components built with Radix UI and
-                      Tailwind CSS.
-                    </p>
-                  </a>
-                </NavigationMenuLink>
-              </li>
-              <ListItem href="/docs" title="Introduction">
-                Re-usable components built using Radix UI and Tailwind CSS.
-              </ListItem>
-              <ListItem href="/docs/installation" title="Installation">
-                How to install dependencies and structure your app.
-              </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Typography">
-                Styles for headings, paragraphs, lists...etc
-              </ListItem>
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Industry</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-full sm:w-[300px] md:w-[400px] lg:w-[500px] xl:w-[600px] gap-2 sm:gap-3 p-3 sm:p-4 md:p-6 md:grid-cols-1 lg:grid-cols-2">
-              {components.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
-                  {/* {component.description} */}
-                </ListItem>
-              ))}
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/blog" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Blog
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/blog" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              About Us
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/contact" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Contact
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-      </NavigationMenuList>
-    </NavigationMenu>
-  );
-}
+    const [isTechDropdownVisible, setTechDropdownVisibility] = React.useState(false);
+    const [isIndustryDropdownVisible, setIndustryDropdownVisibility] = React.useState(false);
 
-const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
-  return (
-    <li>
-      <NavigationMenuLink asChild>
-        <a
-          ref={ref}
-          className={cn(
-            "block select-none space-y-1 rounded-full p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-            className
-          )}
-          {...props}
-        >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-            {children}
-          </p>
-        </a>
-      </NavigationMenuLink>
-    </li>
-  );
-});
-ListItem.displayName = "ListItem";
+    return (
+        <nav className="bg-white border-gray-200 ">
+            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
+                <Link href="/" className="flex h-10">
+                    <img src="/images/logo/ariadne-long-logo.png" width={140} height={100} alt="Ariadne Logo Long" />
+                </Link>
+
+                <div className="hidden w-full md:flex md:w-auto" id="navbar-dropdown">
+                    <ul className="flex flex-col h-full font-medium p-4 md:p-0 mt-4 md:flex-row md:space-x-8 md:mt-0">
+                        <li className="p-2 rounded-full hover:bg-gray-100">
+                            <a href="/" className="block py-4 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0">Home</a>
+                        </li>
+
+                        <li className="group relative p-2 rounded-md hover:bg-gray-100"
+                            onMouseEnter={() => setTechDropdownVisibility(true)}
+                            onMouseLeave={() => setTechDropdownVisibility(false)}>
+                            <div className="flex items-center justify-between w-full py-4 px-4 text-gray-900 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto cursor-pointer">
+                                Technology  <ChevronDown size={16}/>
+                            </div>
+                            {isTechDropdownVisible && (
+                                <div className="z-10 absolute left-0 mt-2 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                                    <ul className="py-4 text-sm text-gray-700">
+                                        <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Ariadne Analytics</a></li>
+                                        <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Ariadne Navigation</a></li>
+                                        <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Ariadne Engagement</a></li>
+                                    </ul>
+                                    <div className="py-1">
+                                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign out</a>
+                                    </div>
+                                </div>
+                            )}
+                        </li>
+
+                        <li className="group relative p-2 rounded-md hover:bg-gray-100"
+                            onMouseEnter={() => setIndustryDropdownVisibility(true)}
+                            onMouseLeave={() => setIndustryDropdownVisibility(false)}>
+                            <div className="flex items-center justify-between w-full py-4 px-4 text-gray-900 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto cursor-pointer">
+                                Industry <ChevronDown size={16}/>
+                            </div>
+                            {isIndustryDropdownVisible && (
+                                <div className="z-10 absolute left-0 mt-2 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                                    <ul className="py-4 text-sm text-gray-700">
+                                        <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Airports</a></li>
+                                        <li><a href="/industry/retail" className="block px-4 py-2 hover:bg-gray-100">Retail</a></li>
+                                        <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Shopping Malls</a></li>
+                                        <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Smart Cities</a></li>
+                                    </ul>
+                                    <div className="py-1">
+                                        <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign out</a>
+                                    </div>
+                                </div>
+                            )}
+                        </li>
+
+                        <li className="p-2 rounded-full hover:bg-gray-100">
+                            <a href="/blog" className="block py-4 pl-3 pr-4 text-gray-900 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Blog</a>
+                        </li>
+
+                        <li className="p-2 rounded-md hover:bg-gray-100">
+                            <a href="#" className="block py-4 pl-3 pr-4 text-gray-900 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Pricing</a>
+                        </li>
+
+                        <li className="p-2 rounded-md hover:bg-gray-100">
+                            <a href="/contact" className="block py-4 pl-3 pr-4 text-gray-900 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div className="flex items-center space-x-4">
+                    <LocaleSelector />
+                    <Link href="/get-started" className="inline-block bg-ariadnepurple hover:bg-opacity-90 text-white font-bold py-2 px-4 rounded-full">
+                        Get Started
+                    </Link>
+                </div>
+            </div>
+        </nav>
+    );
+}

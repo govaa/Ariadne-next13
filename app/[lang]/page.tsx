@@ -1,5 +1,5 @@
 import dynamic from "next/dynamic";
-import { getDictionary } from './dictionaries';
+import { getDictionary } from "@/lib/get-dictionary";
 import VerticalCarousel from "@/components/homepage/vertical-carousel";
 import { siteConfig } from "@/config/site";
 import { buttonVariants } from "@/components/ui/button";
