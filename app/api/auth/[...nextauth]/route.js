@@ -1,6 +1,6 @@
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
-import { findUser, getUserById, updateLastSigninTime } from "../hooks/auth";
+import { findUser, getUserById, updateLastSigninTime } from "/app/hooks/auth.js";
 import bcrypt from "bcrypt";
 
 const env_secret = process.env.NEXTAUTH_SECRET;
