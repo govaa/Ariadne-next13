@@ -148,6 +148,7 @@ module.exports = require("next/dist/shared/lib/router/utils/parse-path");
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 2325:
 /***/ ((module) => {
 
@@ -156,6 +157,8 @@ module.exports = require("next/dist/shared/lib/router/utils/path-has-prefix");
 
 /***/ }),
 
+=======
+>>>>>>> parent of e4d33f620 (.next removed)
 /***/ 3750:
 /***/ ((module) => {
 
@@ -290,7 +293,11 @@ module.exports = require("zlib");
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+<<<<<<< HEAD
 /* harmony export */   GlobalError: () => (/* reexport default from dynamic */ next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_2___default.a),
+=======
+/* harmony export */   GlobalError: () => (/* reexport safe */ next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_1__.GlobalError),
+>>>>>>> parent of e4d33f620 (.next removed)
 /* harmony export */   __next_app__: () => (/* binding */ __next_app__),
 /* harmony export */   originalPathname: () => (/* binding */ originalPathname),
 /* harmony export */   pages: () => (/* binding */ pages),
@@ -299,6 +306,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7262);
 /* harmony import */ var next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0__);
+<<<<<<< HEAD
 /* harmony import */ var next_dist_server_future_route_kind__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9513);
 /* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1823);
 /* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_2__);
@@ -314,6 +322,19 @@ const AppPageRouteModule = next_dist_server_future_route_modules_app_page_module
 // We inject the tree and pages here so that we can use them in the route
 // module.
 const tree = {
+=======
+/* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1823);
+/* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2502);
+/* harmony import */ var next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony reexport (unknown) */ var __WEBPACK_REEXPORT_OBJECT__ = {};
+/* harmony reexport (unknown) */ for(const __WEBPACK_IMPORT_KEY__ in next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__) if(["default","tree","pages","GlobalError","originalPathname","__next_app__","routeModule"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = () => next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__[__WEBPACK_IMPORT_KEY__]
+/* harmony reexport (unknown) */ __webpack_require__.d(__webpack_exports__, __WEBPACK_REEXPORT_OBJECT__);
+
+    
+
+    const tree = {
+>>>>>>> parent of e4d33f620 (.next removed)
         children: [
         '',
         {
@@ -326,6 +347,7 @@ const tree = {
         }]
       },
         {
+<<<<<<< HEAD
         'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3678)), "/Users/govarthan/Documents/GitHub/Ariadne-next13/app/[lang]/layout.tsx"],
         
       }
@@ -366,6 +388,41 @@ const routeModule = new AppPageRouteModule({
 });
 
 //# sourceMappingURL=app-page.js.map
+=======
+          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3678)), "/Users/govarthan/Documents/GitHub/Ariadne-next13/app/[lang]/layout.tsx"],
+          
+        }
+      ]
+      },
+        {
+          
+          
+        }
+      ]
+      }.children;
+    const pages = ["/Users/govarthan/Documents/GitHub/Ariadne-next13/app/[lang]/page.tsx"];
+
+    
+
+    const originalPathname = "/[lang]/page"
+    const __next_app__ = {
+      require: __webpack_require__,
+      // all modules are in the entry chunk, so we never actually need to load chunks in webpack
+      loadChunk: () => Promise.resolve()
+    }
+
+    
+
+    // Create and export the route module that will be consumed.
+    const options = {"definition":{"kind":"APP_PAGE","page":"/[lang]/page","pathname":"/[lang]","bundlePath":"app/[lang]/page","filename":"","appPaths":[]}}
+    const routeModule = new (next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0___default())({
+      ...options,
+      userland: {
+        loaderTree: tree,
+      },
+    })
+  
+>>>>>>> parent of e4d33f620 (.next removed)
 
 /***/ }),
 
@@ -391,14 +448,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6786);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+<<<<<<< HEAD
 /* harmony import */ var modularize_import_loader_name_ChevronLeft_from_default_as_default_join_esm_icons_chevron_left_lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8158);
 /* harmony import */ var modularize_import_loader_name_ChevronRight_from_default_as_default_join_esm_icons_chevron_right_lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1922);
+=======
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1158);
+>>>>>>> parent of e4d33f620 (.next removed)
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8038);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* __next_internal_client_entry_do_not_use__ default auto */ 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of e4d33f620 (.next removed)
 function Carousel({ children: slides, autoslides = false, autoSlideInterval = 3000 }) {
     const [curr, setCurr] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(0);
     const currRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)(curr);
@@ -440,14 +504,22 @@ function Carousel({ children: slides, autoslides = false, autoSlideInterval = 30
                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
                         onClick: prev,
                         className: "p-1 rounded-full shadow bg-white text-gray-800",
+<<<<<<< HEAD
                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(modularize_import_loader_name_ChevronLeft_from_default_as_default_join_esm_icons_chevron_left_lucide_react__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
+=======
+                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__/* .ChevronLeft */ .s$$, {
+>>>>>>> parent of e4d33f620 (.next removed)
                             size: 40
                         })
                     }),
                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
                         onClick: next,
                         className: "p-1 rounded-full shadow bg-white text-gray-800",
+<<<<<<< HEAD
                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(modularize_import_loader_name_ChevronRight_from_default_as_default_join_esm_icons_chevron_right_lucide_react__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
+=======
+                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__/* .ChevronRight */ ._Qn, {
+>>>>>>> parent of e4d33f620 (.next removed)
                             size: 40
                         })
                     })
@@ -481,12 +553,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8038);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+<<<<<<< HEAD
 /* harmony import */ var modularize_import_loader_name_ChevronLeft_from_default_as_default_join_esm_icons_chevron_left_lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8158);
 /* harmony import */ var modularize_import_loader_name_ChevronRight_from_default_as_default_join_esm_icons_chevron_right_lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1922);
 /* __next_internal_client_entry_do_not_use__ default auto */ 
 
 
 
+=======
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1158);
+/* __next_internal_client_entry_do_not_use__ default auto */ 
+
+
+>>>>>>> parent of e4d33f620 (.next removed)
 const slides = [
     "/images/partner-logos/partner-101.png",
     "/images/partner-logos/partner-102.png",
@@ -566,14 +645,22 @@ function LogoCarousel() {
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
                 className: "absolute top-1/2 left-2 transform -translate-y-1/2 bg-white text-black rounded-full p-2",
                 onClick: prevSlide,
+<<<<<<< HEAD
                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(modularize_import_loader_name_ChevronLeft_from_default_as_default_join_esm_icons_chevron_left_lucide_react__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
+=======
+                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__/* .ChevronLeft */ .s$$, {
+>>>>>>> parent of e4d33f620 (.next removed)
                     size: 24
                 })
             }),
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
                 className: "absolute top-1/2 right-2 transform -translate-y-1/2 bg-white text-black rounded-full p-2",
                 onClick: nextSlide,
+<<<<<<< HEAD
                 children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(modularize_import_loader_name_ChevronRight_from_default_as_default_join_esm_icons_chevron_right_lucide_react__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
+=======
+                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__/* .ChevronRight */ ._Qn, {
+>>>>>>> parent of e4d33f620 (.next removed)
                     size: 24
                 })
             })
@@ -594,14 +681,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6786);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+<<<<<<< HEAD
 /* harmony import */ var modularize_import_loader_name_ChevronLeft_from_default_as_default_join_esm_icons_chevron_left_lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8158);
 /* harmony import */ var modularize_import_loader_name_ChevronRight_from_default_as_default_join_esm_icons_chevron_right_lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1922);
+=======
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1158);
+>>>>>>> parent of e4d33f620 (.next removed)
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8038);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* __next_internal_client_entry_do_not_use__ default auto */ 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of e4d33f620 (.next removed)
 function VCarousel({ children: slidesComponents, slides, autoslides = false, autoSlideInterval = 3000 }) {
     const [curr, setCurr] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(0);
     const currRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)(curr);
@@ -643,14 +737,22 @@ function VCarousel({ children: slidesComponents, slides, autoslides = false, aut
                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
                         onClick: prev,
                         className: "p-1 rounded-full shadow bg-white text-gray-800",
+<<<<<<< HEAD
                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(modularize_import_loader_name_ChevronLeft_from_default_as_default_join_esm_icons_chevron_left_lucide_react__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
+=======
+                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__/* .ChevronLeft */ .s$$, {
+>>>>>>> parent of e4d33f620 (.next removed)
                             size: 40
                         })
                     }),
                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("button", {
                         onClick: next,
                         className: "p-1 rounded-full shadow bg-white text-gray-800",
+<<<<<<< HEAD
                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(modularize_import_loader_name_ChevronRight_from_default_as_default_join_esm_icons_chevron_right_lucide_react__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
+=======
+                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__/* .ChevronRight */ ._Qn, {
+>>>>>>> parent of e4d33f620 (.next removed)
                             size: 40
                         })
                     })
@@ -791,7 +893,11 @@ const LogoCarousel = app_dynamic_default()(()=>__webpack_require__.e(/* import()
             children: "Loading"
         })
 });
+<<<<<<< HEAD
 const Footer = app_dynamic_default()(()=>Promise.all(/* import() */[__webpack_require__.e(858), __webpack_require__.e(112), __webpack_require__.e(769)]).then(__webpack_require__.bind(__webpack_require__, 769)), {
+=======
+const Footer = app_dynamic_default()(()=>Promise.all(/* import() */[__webpack_require__.e(101), __webpack_require__.e(769)]).then(__webpack_require__.bind(__webpack_require__, 769)), {
+>>>>>>> parent of e4d33f620 (.next removed)
     loadableGenerated: {
         modules: [
             "/Users/govarthan/Documents/GitHub/Ariadne-next13/app/[lang]/page.tsx -> " + "@/components/footer"
@@ -932,7 +1038,11 @@ async function IndexPage({ params: { lang } }) {
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+<<<<<<< HEAD
 var __webpack_exports__ = __webpack_require__.X(0, [478,875,258,470,306,246], () => (__webpack_exec__(9439)));
+=======
+var __webpack_exports__ = __webpack_require__.X(0, [212,631,258,964,598,246], () => (__webpack_exec__(9439)));
+>>>>>>> parent of e4d33f620 (.next removed)
 module.exports = __webpack_exports__;
 
 })();

@@ -1,7 +1,11 @@
 // runtime can't be in strict mode because a global variable is assign and maybe created.
 (self["webpackChunk_N_E"] = self["webpackChunk_N_E"] || []).push([[826],{
 
+<<<<<<< HEAD
 /***/ 749:
+=======
+/***/ 49:
+>>>>>>> parent of e4d33f620 (.next removed)
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -542,7 +546,11 @@ function getNextPathnameInfo(pathname, options) {
 
 
 
+<<<<<<< HEAD
 const REGEX_LOCALHOST_HOSTNAME = /(?!^https?:\/\/)(127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}|\[::1\]|localhost)/;
+=======
+const REGEX_LOCALHOST_HOSTNAME = /(?!^https?:\/\/)(127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}|::1|localhost)/;
+>>>>>>> parent of e4d33f620 (.next removed)
 function parseURL(url, base) {
     return new URL(String(url).replace(REGEX_LOCALHOST_HOSTNAME, "localhost"), base && String(base).replace(REGEX_LOCALHOST_HOSTNAME, "localhost"));
 }
@@ -719,7 +727,11 @@ class NextURL {
 } //# sourceMappingURL=next-url.js.map
 
 // EXTERNAL MODULE: ./node_modules/next/dist/compiled/@edge-runtime/cookies/index.js
+<<<<<<< HEAD
 var _edge_runtime_cookies = __webpack_require__(865);
+=======
+var cookies = __webpack_require__(865);
+>>>>>>> parent of e4d33f620 (.next removed)
 ;// CONCATENATED MODULE: ./node_modules/next/dist/esm/server/web/spec-extension/cookies.js
  //# sourceMappingURL=cookies.js.map
 
@@ -733,14 +745,22 @@ class NextRequest extends Request {
     constructor(input, init = {}){
         const url = typeof input !== "string" && "url" in input ? input.url : String(input);
         validateURL(url);
+<<<<<<< HEAD
         if (input instanceof Request) super(input, init);
         else super(url, init);
+=======
+        super(url, init);
+>>>>>>> parent of e4d33f620 (.next removed)
         const nextUrl = new NextURL(url, {
             headers: toNodeOutgoingHttpHeaders(this.headers),
             nextConfig: init.nextConfig
         });
         this[INTERNALS] = {
+<<<<<<< HEAD
             cookies: new _edge_runtime_cookies.RequestCookies(this.headers),
+=======
+            cookies: new cookies.RequestCookies(this.headers),
+>>>>>>> parent of e4d33f620 (.next removed)
             geo: init.geo || {},
             ip: init.ip,
             nextUrl,
@@ -831,7 +851,11 @@ class NextResponse extends Response {
     constructor(body, init = {}){
         super(body, init);
         this[response_INTERNALS] = {
+<<<<<<< HEAD
             cookies: new _edge_runtime_cookies.ResponseCookies(this.headers),
+=======
+            cookies: new cookies.ResponseCookies(this.headers),
+>>>>>>> parent of e4d33f620 (.next removed)
             url: init.url ? new NextURL(init.url, {
                 headers: toNodeOutgoingHttpHeaders(this.headers),
                 nextConfig: init.nextConfig
@@ -915,7 +939,11 @@ const NEXT_ROUTER_PREFETCH = "Next-Router-Prefetch";
 const NEXT_URL = "Next-Url";
 const FETCH_CACHE_HEADER = "x-vercel-sc-headers";
 const RSC_CONTENT_TYPE_HEADER = "text/x-component";
+<<<<<<< HEAD
 const RSC_VARY_HEADER = RSC + ", " + NEXT_ROUTER_STATE_TREE + ", " + NEXT_ROUTER_PREFETCH + ", " + NEXT_URL;
+=======
+const RSC_VARY_HEADER = RSC + ", " + NEXT_ROUTER_STATE_TREE + ", " + NEXT_ROUTER_PREFETCH;
+>>>>>>> parent of e4d33f620 (.next removed)
 const FLIGHT_PARAMETERS = [
     [
         RSC
@@ -1020,6 +1048,10 @@ const MIDDLEWARE_FILENAME = "middleware";
 const MIDDLEWARE_LOCATION_REGEXP = (/* unused pure expression or super */ null && (`(?:src/)?${MIDDLEWARE_FILENAME}`));
 // Pattern to detect instrumentation hooks file
 const INSTRUMENTATION_HOOK_FILENAME = "instrumentation";
+<<<<<<< HEAD
+=======
+const INSTRUMENTATION_HOOKS_LOCATION_REGEXP = (/* unused pure expression or super */ null && (`(?:src/)?${INSTRUMENTATION_HOOK_FILENAME}`));
+>>>>>>> parent of e4d33f620 (.next removed)
 // Because on Windows absolute paths in the generated code can break because of numbers, eg 1 in the path,
 // we have to use a private alias
 const PAGES_DIR_ALIAS = "private-next-pages";
@@ -1126,6 +1158,7 @@ const WEBPACK_RESOURCE_QUERIES = {
     metadataImageMeta: "__next_metadata_image_meta__"
 }; //# sourceMappingURL=constants.js.map
 
+<<<<<<< HEAD
 ;// CONCATENATED MODULE: ./node_modules/next/dist/esm/server/web/spec-extension/adapters/reflect.js
 class ReflectAdapter {
     static get(target, prop, receiver) {
@@ -1740,6 +1773,8 @@ function createAsyncLocalStorage() {
 
 const requestAsyncStorage = createAsyncLocalStorage(); //# sourceMappingURL=request-async-storage.js.map
 
+=======
+>>>>>>> parent of e4d33f620 (.next removed)
 ;// CONCATENATED MODULE: ./node_modules/next/dist/esm/server/web/adapter.js
 
 
@@ -1754,8 +1789,11 @@ const requestAsyncStorage = createAsyncLocalStorage(); //# sourceMappingURL=requ
 
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> parent of e4d33f620 (.next removed)
 class NextRequestHint extends NextRequest {
     constructor(params){
         super(params.input, params.init);
@@ -1795,7 +1833,10 @@ async function adapter(params) {
     await ensureInstrumentationRegistered();
     // TODO-APP: use explicit marker for this
     const isEdgeRendering = typeof self.__BUILD_MANIFEST !== "undefined";
+<<<<<<< HEAD
     const prerenderManifest = typeof self.__PRERENDER_MANIFEST === "string" ? JSON.parse(self.__PRERENDER_MANIFEST) : undefined;
+=======
+>>>>>>> parent of e4d33f620 (.next removed)
     params.request.url = normalizeRscPath(params.request.url, true);
     const requestUrl = new NextURL(params.request.url, {
         headers: params.request.headers,
@@ -1888,6 +1929,7 @@ async function adapter(params) {
         request,
         page: params.page
     });
+<<<<<<< HEAD
     let response;
     let cookiesFromResponse;
     // we only care to make async storage available for middleware
@@ -1909,13 +1951,19 @@ async function adapter(params) {
     } else {
         response = await params.handler(request, event);
     }
+=======
+    let response = await params.handler(request, event);
+>>>>>>> parent of e4d33f620 (.next removed)
     // check if response is a Response object
     if (response && !(response instanceof Response)) {
         throw new TypeError("Expected an instance of Response to be returned");
     }
+<<<<<<< HEAD
     if (response && cookiesFromResponse) {
         response.headers.set("set-cookie", cookiesFromResponse);
     }
+=======
+>>>>>>> parent of e4d33f620 (.next removed)
     /**
    * For rewrites we must always include the locale in the final pathname
    * so we re-create the NextURL forcing it to include it when the it is
@@ -3061,6 +3109,7 @@ module.exports.preferredMediaTypes = preferredMediaTypes;
 /***/ ((module) => {
 
 "use strict";
+<<<<<<< HEAD
 
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
@@ -3409,9 +3458,342 @@ function normalizeCookie(cookie = {
 // Annotate the CommonJS export names for ESM import in node:
 0 && (0);
 
+=======
+>>>>>>> parent of e4d33f620 (.next removed)
 
-/***/ }),
+var __defProp = Object.defineProperty;
+var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __export = (target, all)=>{
+    for(var name in all)__defProp(target, name, {
+        get: all[name],
+        enumerable: true
+    });
+};
+var __copyProps = (to, from, except, desc)=>{
+    if (from && typeof from === "object" || typeof from === "function") {
+        for (let key of __getOwnPropNames(from))if (!__hasOwnProp.call(to, key) && key !== except) __defProp(to, key, {
+            get: ()=>from[key],
+            enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable
+        });
+    }
+    return to;
+};
+var __toCommonJS = (mod)=>__copyProps(__defProp({}, "__esModule", {
+        value: true
+    }), mod);
+// src/index.ts
+var src_exports = {};
+__export(src_exports, {
+    RequestCookies: ()=>RequestCookies,
+    ResponseCookies: ()=>ResponseCookies
+});
+module.exports = __toCommonJS(src_exports);
+// src/serialize.ts
+function serialize(c) {
+    var _a;
+    const attrs = [
+        "path" in c && c.path && `Path=${c.path}`,
+        "expires" in c && (c.expires || c.expires === 0) && `Expires=${(typeof c.expires === "number" ? new Date(c.expires) : c.expires).toUTCString()}`,
+        "maxAge" in c && typeof c.maxAge === "number" && `Max-Age=${c.maxAge}`,
+        "domain" in c && c.domain && `Domain=${c.domain}`,
+        "secure" in c && c.secure && "Secure",
+        "httpOnly" in c && c.httpOnly && "HttpOnly",
+        "sameSite" in c && c.sameSite && `SameSite=${c.sameSite}`
+    ].filter(Boolean);
+    return `${c.name}=${encodeURIComponent((_a = c.value) != null ? _a : "")}; ${attrs.join("; ")}`;
+}
+function parseCookieString(cookie) {
+    const map = /* @__PURE__ */ new Map();
+    for (const pair of cookie.split(/; */)){
+        if (!pair) continue;
+        const splitAt = pair.indexOf("=");
+        if (splitAt === -1) {
+            map.set(pair, "true");
+            continue;
+        }
+        const [key, value] = [
+            pair.slice(0, splitAt),
+            pair.slice(splitAt + 1)
+        ];
+        try {
+            map.set(key, decodeURIComponent(value != null ? value : "true"));
+        } catch  {}
+    }
+    return map;
+}
+function parseSetCookieString(setCookie) {
+    if (!setCookie) {
+        return void 0;
+    }
+    const [[name, value], ...attributes] = parseCookieString(setCookie);
+    const { domain, expires, httponly, maxage, path, samesite, secure } = Object.fromEntries(attributes.map(([key, value2])=>[
+            key.toLowerCase(),
+            value2
+        ]));
+    const cookie = {
+        name,
+        value: decodeURIComponent(value),
+        domain,
+        ...expires && {
+            expires: new Date(expires)
+        },
+        ...httponly && {
+            httpOnly: true
+        },
+        ...typeof maxage === "string" && {
+            maxAge: Number(maxage)
+        },
+        path,
+        ...samesite && {
+            sameSite: parseSameSite(samesite)
+        },
+        ...secure && {
+            secure: true
+        }
+    };
+    return compact(cookie);
+}
+function compact(t) {
+    const newT = {};
+    for(const key in t){
+        if (t[key]) {
+            newT[key] = t[key];
+        }
+    }
+    return newT;
+}
+var SAME_SITE = [
+    "strict",
+    "lax",
+    "none"
+];
+function parseSameSite(string) {
+    string = string.toLowerCase();
+    return SAME_SITE.includes(string) ? string : void 0;
+}
+// src/request-cookies.ts
+var RequestCookies = class {
+    constructor(requestHeaders){
+        /** @internal */ this._parsed = /* @__PURE__ */ new Map();
+        this._headers = requestHeaders;
+        const header = requestHeaders.get("cookie");
+        if (header) {
+            const parsed = parseCookieString(header);
+            for (const [name, value] of parsed){
+                this._parsed.set(name, {
+                    name,
+                    value
+                });
+            }
+        }
+    }
+    [Symbol.iterator]() {
+        return this._parsed[Symbol.iterator]();
+    }
+    /**
+   * The amount of cookies received from the client
+   */ get size() {
+        return this._parsed.size;
+    }
+    get(...args) {
+        const name = typeof args[0] === "string" ? args[0] : args[0].name;
+        return this._parsed.get(name);
+    }
+    getAll(...args) {
+        var _a;
+        const all = Array.from(this._parsed);
+        if (!args.length) {
+            return all.map(([_, value])=>value);
+        }
+        const name = typeof args[0] === "string" ? args[0] : (_a = args[0]) == null ? void 0 : _a.name;
+        return all.filter(([n])=>n === name).map(([_, value])=>value);
+    }
+    has(name) {
+        return this._parsed.has(name);
+    }
+    set(...args) {
+        const [name, value] = args.length === 1 ? [
+            args[0].name,
+            args[0].value
+        ] : args;
+        const map = this._parsed;
+        map.set(name, {
+            name,
+            value
+        });
+        this._headers.set("cookie", Array.from(map).map(([_, value2])=>serialize(value2)).join("; "));
+        return this;
+    }
+    /**
+   * Delete the cookies matching the passed name or names in the request.
+   */ delete(names) {
+        const map = this._parsed;
+        const result = !Array.isArray(names) ? map.delete(names) : names.map((name)=>map.delete(name));
+        this._headers.set("cookie", Array.from(map).map(([_, value])=>serialize(value)).join("; "));
+        return result;
+    }
+    /**
+   * Delete all the cookies in the cookies in the request.
+   */ clear() {
+        this.delete(Array.from(this._parsed.keys()));
+        return this;
+    }
+    /**
+   * Format the cookies in the request as a string for logging
+   */ [Symbol.for("edge-runtime.inspect.custom")]() {
+        return `RequestCookies ${JSON.stringify(Object.fromEntries(this._parsed))}`;
+    }
+    toString() {
+        return [
+            ...this._parsed.values()
+        ].map((v)=>`${v.name}=${encodeURIComponent(v.value)}`).join("; ");
+    }
+};
+// src/response-cookies.ts
+var ResponseCookies = class {
+    constructor(responseHeaders){
+        /** @internal */ this._parsed = /* @__PURE__ */ new Map();
+        var _a, _b, _c;
+        this._headers = responseHeaders;
+        const setCookie = // @ts-expect-error See https://github.com/whatwg/fetch/issues/973
+        (_c = (_b = (_a = responseHeaders.getAll) == null ? void 0 : _a.call(responseHeaders, "set-cookie")) != null ? _b : responseHeaders.get("set-cookie")) != null ? _c : [];
+        const cookieStrings = Array.isArray(setCookie) ? setCookie : splitCookiesString(setCookie);
+        for (const cookieString of cookieStrings){
+            const parsed = parseSetCookieString(cookieString);
+            if (parsed) this._parsed.set(parsed.name, parsed);
+        }
+    }
+    /**
+   * {@link https://wicg.github.io/cookie-store/#CookieStore-get CookieStore#get} without the Promise.
+   */ get(...args) {
+        const key = typeof args[0] === "string" ? args[0] : args[0].name;
+        return this._parsed.get(key);
+    }
+    /**
+   * {@link https://wicg.github.io/cookie-store/#CookieStore-getAll CookieStore#getAll} without the Promise.
+   */ getAll(...args) {
+        var _a;
+        const all = Array.from(this._parsed.values());
+        if (!args.length) {
+            return all;
+        }
+        const key = typeof args[0] === "string" ? args[0] : (_a = args[0]) == null ? void 0 : _a.name;
+        return all.filter((c)=>c.name === key);
+    }
+    /**
+   * {@link https://wicg.github.io/cookie-store/#CookieStore-set CookieStore#set} without the Promise.
+   */ set(...args) {
+        const [name, value, cookie] = args.length === 1 ? [
+            args[0].name,
+            args[0].value,
+            args[0]
+        ] : args;
+        const map = this._parsed;
+        map.set(name, normalizeCookie({
+            name,
+            value,
+            ...cookie
+        }));
+        replace(map, this._headers);
+        return this;
+    }
+    /**
+   * {@link https://wicg.github.io/cookie-store/#CookieStore-delete CookieStore#delete} without the Promise.
+   */ delete(...args) {
+        const name = typeof args[0] === "string" ? args[0] : args[0].name;
+        return this.set({
+            name,
+            value: "",
+            expires: /* @__PURE__ */ new Date(0)
+        });
+    }
+    [Symbol.for("edge-runtime.inspect.custom")]() {
+        return `ResponseCookies ${JSON.stringify(Object.fromEntries(this._parsed))}`;
+    }
+    toString() {
+        return [
+            ...this._parsed.values()
+        ].map(serialize).join("; ");
+    }
+};
+function replace(bag, headers) {
+    headers.delete("set-cookie");
+    for (const [, value] of bag){
+        const serialized = serialize(value);
+        headers.append("set-cookie", serialized);
+    }
+}
+function normalizeCookie(cookie = {
+    name: "",
+    value: ""
+}) {
+    if (typeof cookie.expires === "number") {
+        cookie.expires = new Date(cookie.expires);
+    }
+    if (cookie.maxAge) {
+        cookie.expires = new Date(Date.now() + cookie.maxAge * 1e3);
+    }
+    if (cookie.path === null || cookie.path === void 0) {
+        cookie.path = "/";
+    }
+    return cookie;
+}
+function splitCookiesString(cookiesString) {
+    if (!cookiesString) return [];
+    var cookiesStrings = [];
+    var pos = 0;
+    var start;
+    var ch;
+    var lastComma;
+    var nextStart;
+    var cookiesSeparatorFound;
+    function skipWhitespace() {
+        while(pos < cookiesString.length && /\s/.test(cookiesString.charAt(pos))){
+            pos += 1;
+        }
+        return pos < cookiesString.length;
+    }
+    function notSpecialChar() {
+        ch = cookiesString.charAt(pos);
+        return ch !== "=" && ch !== ";" && ch !== ",";
+    }
+    while(pos < cookiesString.length){
+        start = pos;
+        cookiesSeparatorFound = false;
+        while(skipWhitespace()){
+            ch = cookiesString.charAt(pos);
+            if (ch === ",") {
+                lastComma = pos;
+                pos += 1;
+                skipWhitespace();
+                nextStart = pos;
+                while(pos < cookiesString.length && notSpecialChar()){
+                    pos += 1;
+                }
+                if (pos < cookiesString.length && cookiesString.charAt(pos) === "=") {
+                    cookiesSeparatorFound = true;
+                    pos = nextStart;
+                    cookiesStrings.push(cookiesString.substring(start, lastComma));
+                    start = pos;
+                } else {
+                    pos = lastComma + 1;
+                }
+            } else {
+                pos += 1;
+            }
+        }
+        if (!cookiesSeparatorFound || pos >= cookiesString.length) {
+            cookiesStrings.push(cookiesString.substring(start, cookiesString.length));
+        }
+    }
+    return cookiesStrings;
+}
+// Annotate the CommonJS export names for ESM import in node:
+0 && (0);
 
+<<<<<<< HEAD
 /***/ 487:
 /***/ ((module) => {
 
@@ -3537,13 +3919,19 @@ var __dirname = "/";
     module.exports = e;
 })();
 
+=======
+>>>>>>> parent of e4d33f620 (.next removed)
 
 /***/ })
 
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+<<<<<<< HEAD
 /******/ var __webpack_exports__ = (__webpack_exec__(749));
+=======
+/******/ var __webpack_exports__ = (__webpack_exec__(49));
+>>>>>>> parent of e4d33f620 (.next removed)
 /******/ (_ENTRIES = typeof _ENTRIES === "undefined" ? {} : _ENTRIES).middleware_middleware = __webpack_exports__;
 /******/ }
 ]);
