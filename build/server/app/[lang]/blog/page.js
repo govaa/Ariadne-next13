@@ -148,7 +148,6 @@ module.exports = require("next/dist/shared/lib/router/utils/parse-path");
 
 /***/ }),
 
-<<<<<<< HEAD
 /***/ 2325:
 /***/ ((module) => {
 
@@ -157,8 +156,6 @@ module.exports = require("next/dist/shared/lib/router/utils/path-has-prefix");
 
 /***/ }),
 
-=======
->>>>>>> parent of e4d33f620 (.next removed)
 /***/ 3750:
 /***/ ((module) => {
 
@@ -197,11 +194,7 @@ module.exports = require("next/dist/shared/lib/utils");
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-<<<<<<< HEAD
 /* harmony export */   GlobalError: () => (/* reexport default from dynamic */ next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_2___default.a),
-=======
-/* harmony export */   GlobalError: () => (/* reexport safe */ next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_1__.GlobalError),
->>>>>>> parent of e4d33f620 (.next removed)
 /* harmony export */   __next_app__: () => (/* binding */ __next_app__),
 /* harmony export */   originalPathname: () => (/* binding */ originalPathname),
 /* harmony export */   pages: () => (/* binding */ pages),
@@ -210,7 +203,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7262);
 /* harmony import */ var next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0__);
-<<<<<<< HEAD
 /* harmony import */ var next_dist_server_future_route_kind__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9513);
 /* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1823);
 /* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_2__);
@@ -220,56 +212,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (unknown) */ for(const __WEBPACK_IMPORT_KEY__ in next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_3__) if(["default","tree","pages","GlobalError","originalPathname","__next_app__","routeModule"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = () => next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_3__[__WEBPACK_IMPORT_KEY__]
 /* harmony reexport (unknown) */ __webpack_require__.d(__webpack_exports__, __WEBPACK_REEXPORT_OBJECT__);
 // @ts-ignore this need to be imported from next/dist to be external
-=======
-/* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1823);
-/* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2502);
-/* harmony import */ var next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony reexport (unknown) */ var __WEBPACK_REEXPORT_OBJECT__ = {};
-/* harmony reexport (unknown) */ for(const __WEBPACK_IMPORT_KEY__ in next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__) if(["default","tree","pages","GlobalError","originalPathname","__next_app__","routeModule"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = () => next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__[__WEBPACK_IMPORT_KEY__]
-/* harmony reexport (unknown) */ __webpack_require__.d(__webpack_exports__, __WEBPACK_REEXPORT_OBJECT__);
 
-    
 
-    const tree = {
-        children: [
-        '',
-        {
-        children: [
-        '[lang]',
-        {
-        children: [
-        'blog',
-        {
-        children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1636)), "/Users/govarthan/Documents/GitHub/Ariadne-next13/app/[lang]/blog/page.tsx"],
-          
-        }]
-      },
-        {
-          
-          
-        }
-      ]
-      },
-        {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3678)), "/Users/govarthan/Documents/GitHub/Ariadne-next13/app/[lang]/layout.tsx"],
-          
-        }
-      ]
-      },
-        {
-          
-          
-        }
-      ]
-      }.children;
-    const pages = ["/Users/govarthan/Documents/GitHub/Ariadne-next13/app/[lang]/blog/page.tsx"];
->>>>>>> parent of e4d33f620 (.next removed)
-
-    
-
-<<<<<<< HEAD
 const AppPageRouteModule = next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0__.AppPageRouteModule;
 // We inject the tree and pages here so that we can use them in the route
 // module.
@@ -335,26 +279,6 @@ const routeModule = new AppPageRouteModule({
 });
 
 //# sourceMappingURL=app-page.js.map
-=======
-    const originalPathname = "/[lang]/blog/page"
-    const __next_app__ = {
-      require: __webpack_require__,
-      // all modules are in the entry chunk, so we never actually need to load chunks in webpack
-      loadChunk: () => Promise.resolve()
-    }
-
-    
-
-    // Create and export the route module that will be consumed.
-    const options = {"definition":{"kind":"APP_PAGE","page":"/[lang]/blog/page","pathname":"/[lang]/blog","bundlePath":"app/[lang]/blog/page","filename":"","appPaths":[]}}
-    const routeModule = new (next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0___default())({
-      ...options,
-      userland: {
-        loaderTree: tree,
-      },
-    })
-  
->>>>>>> parent of e4d33f620 (.next removed)
 
 /***/ }),
 
@@ -365,17 +289,12 @@ Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_
 
 /***/ }),
 
-<<<<<<< HEAD
 /***/ 6567:
-=======
-/***/ 1636:
->>>>>>> parent of e4d33f620 (.next removed)
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-<<<<<<< HEAD
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
@@ -484,95 +403,6 @@ async function BlogIndex() {
     });
 }
 
-=======
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ BlogIndex)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6786);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5124);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4094);
-
-
-
-const get = async ({ page = 1, pageSize = 20, sort = "id:desc" })=>{
-    let params = {
-        populate: [
-            "image",
-            "author"
-        ].join(","),
-        "pagination[pageSize]": String(pageSize),
-        "pagination[page]": String(page),
-        sort
-    };
-    // Convert the params object to a query string
-    const queryString = new URLSearchParams(params).toString();
-    const baseURL = "https://strapi.ariadne.inc/api/";
-    const headers = {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${"4fc1aa969a8a6bc493e04d1bffa993e9caca6a92550487fa640defab50a71e46260ff23fc2a9097415d3656b2e4bb0ad7d7cf4342b47e3ca6fd415131c39fb056d418fe0c45f403e7829be237e7e7ebbc6e872b65818053b953e65a24e49e04fa5d0c965699be2f62031a3e76b1c26dc6a06e24b2e2af50fd334c2ba2018d2cd"}`
-    };
-    const response = await fetch(`${baseURL}posts?${queryString}`, {
-        headers
-    });
-    if (response.status === 200) {
-        const data = await response.json(); // Provide an explicit type
-        return data.data.map(({ attributes })=>attributes);
-    } else {
-        throw new Error(`Failed to fetch data: ${response.status}`);
-    }
-};
-async function BlogIndex() {
-    const posts = await get({}); // You can pass other parameters as required
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-        className: "container mx-auto px-4 py-8",
-        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-            className: "grid grid-cols-1 md:grid-cols-6 gap-8 p-4",
-            children: posts.map((post, index)=>/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-                    className: `${index === 0 ? "col-span-6" : index <= 2 ? "col-span-3" : "col-span-2"} bg-white rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-100`,
-                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
-                        href: `/blog/${post.slug}`,
-                        className: "text-grey-600 hover:text-grey-800 transition-colors duration-200",
-                        children: [
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
-                                src: `${"https://strapi.ariadne.inc"}${post.image.data?.attributes?.formats?.small?.url}`,
-                                alt: post.title,
-                                className: `${index === 0 ? "w-full h-80" : "w-full h-60"} object-cover `
-                            }),
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: "p-5 flex flex-col",
-                                children: [
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h2", {
-                                        className: "text-2xl font-semibold mb-3 truncate",
-                                        children: post.title
-                                    }),
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
-                                        className: "text-gray-500 mb-4 line-clamp-2",
-                                        children: post.excerpt
-                                    }),
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-                                        className: "mt-auto flex justify-end",
-                                        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("span", {
-                                            className: "flex items-center text-grey-400 hover:text-grey-800 transition-colors duration-200",
-                                            children: [
-                                                "Read More",
-                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(lucide_react__WEBPACK_IMPORTED_MODULE_2__/* .ChevronRight */ ._Qn, {
-                                                    className: "ml-2"
-                                                })
-                                            ]
-                                        })
-                                    })
-                                ]
-                            })
-                        ]
-                    })
-                }, post.slug))
-        })
-    });
-}
-
->>>>>>> parent of e4d33f620 (.next removed)
 
 /***/ })
 
@@ -583,11 +413,7 @@ async function BlogIndex() {
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-<<<<<<< HEAD
 var __webpack_exports__ = __webpack_require__.X(0, [478,875,858,306], () => (__webpack_exec__(2553)));
-=======
-var __webpack_exports__ = __webpack_require__.X(0, [212,631,101,598], () => (__webpack_exec__(2553)));
->>>>>>> parent of e4d33f620 (.next removed)
 module.exports = __webpack_exports__;
 
 })();

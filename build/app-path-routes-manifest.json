@@ -1,9 +1,9 @@
 {
-  "/api/hello/route": "/api/hello",
   "/[lang]/page": "/[lang]",
-  "/[lang]/blog/page": "/[lang]/blog",
   "/[lang]/contact/page": "/[lang]/contact",
+  "/[lang]/blog/page": "/[lang]/blog",
   "/[lang]/technology/page": "/[lang]/technology",
+  "/[lang]/blog/[slug]/page": "/[lang]/blog/[slug]",
   "/[lang]/industry/retail/page": "/[lang]/industry/retail",
-  "/[lang]/blog/[slug]/page": "/[lang]/blog/[slug]"
+  "/api/hello/route": "/api/hello"
 }

@@ -148,7 +148,6 @@ module.exports = require("next/dist/shared/lib/router/utils/parse-path");
 
 /***/ }),
 
-<<<<<<< HEAD
 /***/ 2325:
 /***/ ((module) => {
 
@@ -157,8 +156,6 @@ module.exports = require("next/dist/shared/lib/router/utils/path-has-prefix");
 
 /***/ }),
 
-=======
->>>>>>> parent of e4d33f620 (.next removed)
 /***/ 3750:
 /***/ ((module) => {
 
@@ -229,11 +226,7 @@ module.exports = require("util");
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-<<<<<<< HEAD
 /* harmony export */   GlobalError: () => (/* reexport default from dynamic */ next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_2___default.a),
-=======
-/* harmony export */   GlobalError: () => (/* reexport safe */ next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_1__.GlobalError),
->>>>>>> parent of e4d33f620 (.next removed)
 /* harmony export */   __next_app__: () => (/* binding */ __next_app__),
 /* harmony export */   originalPathname: () => (/* binding */ originalPathname),
 /* harmony export */   pages: () => (/* binding */ pages),
@@ -242,7 +235,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7262);
 /* harmony import */ var next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0__);
-<<<<<<< HEAD
 /* harmony import */ var next_dist_server_future_route_kind__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9513);
 /* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1823);
 /* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_2__);
@@ -258,19 +250,6 @@ const AppPageRouteModule = next_dist_server_future_route_modules_app_page_module
 // We inject the tree and pages here so that we can use them in the route
 // module.
 const tree = {
-=======
-/* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1823);
-/* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2502);
-/* harmony import */ var next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony reexport (unknown) */ var __WEBPACK_REEXPORT_OBJECT__ = {};
-/* harmony reexport (unknown) */ for(const __WEBPACK_IMPORT_KEY__ in next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__) if(["default","tree","pages","GlobalError","originalPathname","__next_app__","routeModule"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = () => next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_2__[__WEBPACK_IMPORT_KEY__]
-/* harmony reexport (unknown) */ __webpack_require__.d(__webpack_exports__, __WEBPACK_REEXPORT_OBJECT__);
-
-    
-
-    const tree = {
->>>>>>> parent of e4d33f620 (.next removed)
         children: [
         '',
         {
@@ -289,7 +268,6 @@ const tree = {
         }]
       },
         {
-<<<<<<< HEAD
         
         
       }
@@ -342,53 +320,6 @@ const routeModule = new AppPageRouteModule({
 });
 
 //# sourceMappingURL=app-page.js.map
-=======
-          
-          
-        }
-      ]
-      },
-        {
-          
-          
-        }
-      ]
-      },
-        {
-          'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 3678)), "/Users/govarthan/Documents/GitHub/Ariadne-next13/app/[lang]/layout.tsx"],
-          
-        }
-      ]
-      },
-        {
-          
-          
-        }
-      ]
-      }.children;
-    const pages = ["/Users/govarthan/Documents/GitHub/Ariadne-next13/app/[lang]/blog/[slug]/page.tsx"];
-
-    
-
-    const originalPathname = "/[lang]/blog/[slug]/page"
-    const __next_app__ = {
-      require: __webpack_require__,
-      // all modules are in the entry chunk, so we never actually need to load chunks in webpack
-      loadChunk: () => Promise.resolve()
-    }
-
-    
-
-    // Create and export the route module that will be consumed.
-    const options = {"definition":{"kind":"APP_PAGE","page":"/[lang]/blog/[slug]/page","pathname":"/[lang]/blog/[slug]","bundlePath":"app/[lang]/blog/[slug]/page","filename":"","appPaths":[]}}
-    const routeModule = new (next_dist_server_future_route_modules_app_page_module__WEBPACK_IMPORTED_MODULE_0___default())({
-      ...options,
-      userland: {
-        loaderTree: tree,
-      },
-    })
-  
->>>>>>> parent of e4d33f620 (.next removed)
 
 /***/ }),
 
@@ -476,11 +407,7 @@ async function PostPage({ params }) {
 var __webpack_require__ = require("../../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-<<<<<<< HEAD
 var __webpack_exports__ = __webpack_require__.X(0, [478,875,685,306], () => (__webpack_exec__(6880)));
-=======
-var __webpack_exports__ = __webpack_require__.X(0, [212,631,685,598], () => (__webpack_exec__(6880)));
->>>>>>> parent of e4d33f620 (.next removed)
 module.exports = __webpack_exports__;
 
 })();
