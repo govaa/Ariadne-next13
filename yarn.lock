@@ -874,7 +874,7 @@
   dependencies:
     "@babel/runtime" "^7.0.0"
 
-"@elastic/elasticsearch@8.9.0":
+"@elastic/elasticsearch@^8.9.0":
   version "8.9.0"
   resolved "https://registry.yarnpkg.com/@elastic/elasticsearch/-/elasticsearch-8.9.0.tgz#d132021c6c12e4171fe14371609a5c69b535edd4"
   integrity sha512-UyolnzjOYTRL2966TYS3IoJP4tQbvak/pmYmbP3JdphD53RjkyVDdxMpTBv+2LcNBRrvYPTzxQbpRW/nGSXA9g==

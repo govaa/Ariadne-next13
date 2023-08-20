@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@aws-sdk/client-secrets-manager": "^3.395.0",
-    "@elastic/elasticsearch": "8.9.0",
+    "@elastic/elasticsearch": "^8.9.0",
     "@emailjs/browser": "^3.11.0",
     "@formatjs/intl-localematcher": "^0.4.0",
     "@hubspot/cli": "^5.0.0",

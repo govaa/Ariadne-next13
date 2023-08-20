@@ -1,20 +1,16 @@
 import { Client } from "@elastic/elasticsearch";
-import type { Client as NewTypes } from "@elastic/elasticsearch/api/new";
+import type { Client as NewTypes } from "@elastic/elasticsearch";
 import { DB_CLUSTER } from "@/types/elasticsearch";
 
-// @ts-expect-error @elastic/elasticsearch
-const client1: NewTypes = new Client({
+const client1 = new Client({
   node: "https://52.28.162.238:9200",
   auth: {
     username: "elastic",
     password: "0z4al1fyB0spsQ3lrQtg",
   },
-  ssl: {
-    rejectUnauthorized: false,
-  },
 });
-// @ts-expect-error @elastic/elasticsearch
-const client2: NewTypes = new Client({
+
+const client2 = new Client({
   node: [
     "https://3.123.243.39:9200",
     "https://18.157.148.228:9200",
@@ -26,12 +22,9 @@ const client2: NewTypes = new Client({
     username: "elastic",
     password: "DfgbH6QCiPO2GW6hbbLO",
   },
-  ssl: {
-    rejectUnauthorized: false,
-  },
 });
-// @ts-expect-error @elastic/elasticsearch
-const client3: NewTypes = new Client({
+
+const client3 = new Client({
   node: [
     "https://3.97.188.177:9200",
     "https://3.98.180.200:9200",
@@ -41,9 +34,6 @@ const client3: NewTypes = new Client({
   auth: {
     username: "elastic",
     password: "qLs3vJFbGX3HBiWYC14d",
-  },
-  ssl: {
-    rejectUnauthorized: false,
   },
 });
 
