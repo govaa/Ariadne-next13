@@ -1,0 +1,9 @@
+{
+  "/api/hello/route": "/api/hello",
+  "/[lang]/page": "/[lang]",
+  "/[lang]/blog/page": "/[lang]/blog",
+  "/[lang]/contact/page": "/[lang]/contact",
+  "/[lang]/technology/page": "/[lang]/technology",
+  "/[lang]/industry/retail/page": "/[lang]/industry/retail",
+  "/[lang]/blog/[slug]/page": "/[lang]/blog/[slug]"
+}
