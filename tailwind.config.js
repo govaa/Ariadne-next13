@@ -14,6 +14,21 @@ module.exports = {
       },
     },
     extend: {
+      transitionDuration: {
+        '150': '150ms',
+        '250': '250ms',
+        '350': '350ms',
+        '400': '400ms',
+        '1000': '1000ms',
+      },
+      transitionDelay: {
+        '0': '0ms',
+      },
+      transitionTimingFunction: {
+        'custom1': 'cubic-bezier(0,0,0.15,1)',
+        'custom2': 'cubic-bezier(0.25,0.1,0.25,1)',
+        // ... add other cubic-bezier functions
+      },
       typography: {
           DEFAULT: {
                 css: {

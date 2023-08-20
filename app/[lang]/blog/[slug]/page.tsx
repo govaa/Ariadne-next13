@@ -2,9 +2,21 @@ import qs from "qs";
 import { CMSDataAttributes } from "../page.jsx";
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm';
+import { JSX, ClassAttributes, ImgHTMLAttributes } from "react";
 
 type Props = {
   post: CMSDataAttributes;
+};
+
+type PostPageProps = {
+  params: {
+    [x: string]: any;
+    postID: string;
+    title: string;
+    content: string;
+    excerpt: string;
+    slug: string;
+  }
 };
 
 interface CMSResponse {
@@ -28,6 +40,16 @@ const headers = {
         Authorization: `Bearer ${process.env.cmsApiKey}`,
       };
 
+      function ImageRenderer(props: JSX.IntrinsicAttributes & ClassAttributes<HTMLImageElement> & ImgHTMLAttributes<HTMLImageElement>) {
+        return (
+            <img
+                {...props}
+                className="blog-content-image" // You can add any className or style here
+                style={{ maxWidth: '100%', height: 'auto' }}
+            />
+        );
+    }
+
 async function getSinglePost(slug: string, postID: string) {
   const params= qs.stringify({
     populate: "*",
@@ -40,7 +62,7 @@ return  post.data[0].attributes;
 }
 
 
-export default async function PostPage({ params}: CMSResponse) {
+export default async function PostPage({ params}: PostPageProps) {
 const post= await getSinglePost(params.slug, params.postID);
 console.log("post",post);
   return (
@@ -49,8 +71,11 @@ console.log("post",post);
       <div className="prose prose-lg mx-auto">
         <ReactMarkdown
                       transformImageUri={(url: string) =>
-                        url.startsWith("http") ? url : `${process.env.cmsBaseUrl}${url}`
-                      }               
+                        url.startsWith("http") ? url : `${process.env.cmsBaseUrl}${url}`}
+                        components={{
+                          img: ImageRenderer
+                      }}
+                    
                       >
                       {post.content}
         </ReactMarkdown>

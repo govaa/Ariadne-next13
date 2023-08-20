@@ -2,83 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Base Layer CSS Variables */
 @layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 47.4% 11.2%;
-
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
-
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 47.4% 11.2%;
-
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-
     --card: 0 0% 100%;
     --card-foreground: 222.2 47.4% 11.2%;
-
     --primary: 222.2 47.4% 11.2%;
     --primary-foreground: 210 40% 98%;
-
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
-
     --accent: 210 40% 96.1%;
     --accent-foreground: 222.2 47.4% 11.2%;
-
     --destructive: 0 100% 50%;
     --destructive-foreground: 210 40% 98%;
-
     --ring: 215 20.2% 65.1%;
-
     --radius: 0.5rem;
-    
   }
 
   .dark {
     --background: 224 71% 4%;
     --foreground: 213 31% 91%;
-
     --muted: 223 47% 11%;
     --muted-foreground: 215.4 16.3% 56.9%;
-
     --accent: 216 34% 17%;
     --accent-foreground: 210 40% 98%;
-
     --popover: 224 71% 4%;
     --popover-foreground: 215 20.2% 65.1%;
-
     --border: 216 34% 17%;
     --input: 216 34% 17%;
-
     --card: 224 71% 4%;
     --card-foreground: 213 31% 91%;
-
     --primary: 210 40% 98%;
     --primary-foreground: 222.2 47.4% 1.2%;
-
     --secondary: 222.2 47.4% 11.2%;
     --secondary-foreground: 210 40% 98%;
-
     --destructive: 0 63% 31%;
     --destructive-foreground: 210 40% 98%;
-
     --ring: 216 34% 17%;
-
     --radius: 0.5rem;
   }
-}
 
-@layer base {
-  * {
-    @apply border-border;
-  }
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: 'Gotham', sans-serif;
   }
+
+  h1, h2, h3, h4, h5, h6, p, blockquote, code, pre, table, th, td {
+    font-family: 'Gotham', sans-serif;
+  }
+
   h1 {
     @apply text-4xl font-bold leading-tight mb-4;
   }
@@ -107,7 +88,6 @@
     @apply text-base leading-relaxed mb-4;
   }
 
-
   blockquote {
     @apply border-l-4 pl-4 italic border-gray-300;
   }
@@ -131,8 +111,137 @@
   th {
     @apply bg-gray-300;
   }
+
   .dropdown-container:hover #dropdownNavbar {
-    display: block; /* or any other property you use to show the dropdown */
+    display: block;
+  }
+
+  .blog-content-image {
+    @apply block mx-auto w-1/2 pb-6;
+  }
 }
+
+/* Gotham Fonts Declarations */
+/* ... [All your Gotham font-face declarations from your original code, unchanged] ... */
+
+
+/* Gotham Thin */
+@font-face {
+  font-family: 'Gotham';
+  src: local('Gotham Thin'), url('/public/fonts/Gotham-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: local('Gotham Thin Italic'), url('/public/fonts/Gotham-ThinItalic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* Gotham XLight */
+@font-face {
+  font-family: 'Gotham';
+  src: local('Gotham XLight'), url('/public/fonts/Gotham-XLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: local('Gotham XLight Italic'), url('/public/fonts/Gotham-XLightItalic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* Gotham Light */
+@font-face {
+  font-family: 'Gotham';
+  src: local('Gotham Light'), url('/public/fonts/Gotham-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: local('Gotham Light Italic'), url('/public/fonts/Gotham-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Gotham Book */
+@font-face {
+  font-family: 'Gotham';
+  src: local('Gotham Book'), url('/public/fonts/Gotham-Book.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: local('Gotham Book Italic'), url('/public/fonts/Gotham-BookItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Gotham Medium */
+@font-face {
+  font-family: 'Gotham';
+  src: local('Gotham Medium'), url('/public/fonts/Gotham-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: local('Gotham Medium Italic'), url('/public/fonts/Gotham-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Gotham Bold */
+@font-face {
+  font-family: 'Gotham';
+  src: local('Gotham Bold'), url('/public/fonts/Gotham-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: local('Gotham Bold Italic'), url('/public/fonts/Gotham-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Gotham Black */
+@font-face {
+  font-family: 'Gotham';
+  src: local('Gotham Black'), url('/public/fonts/Gotham-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: local('Gotham Black Italic'), url('/public/fonts/Gotham-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Gotham Ultra */
+@font-face {
+  font-family: 'Gotham';
+  src: local('Gotham Ultra'), url('/public/fonts/Gotham-Ultra.woff2') format('woff2');
+  font-weight: 950;  /* assuming Ultra is heavier than Black */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: local('Gotham Ultra Italic'), url('/public/fonts/Gotham-UltraItalic.woff2') format('woff2');
+  font-weight: 950;  /* assuming Ultra is heavier than Black */
+  font-style: italic;
 }
 
